@@ -1,0 +1,106 @@
+1.What is React JS?
+ans:
+React JS is a popular JavaScript library developed by Facebook for building user interfaces, particularly single-page applications where data changes over time. 
+
+2.What is NPM in React JS?
+Ans:
+NPM stands for Node Package Manager. It is a package manager for JavaScript that allows you to install and manage libraries and dependencies for your React projects. React itself, along with many of its libraries and tools, are distributed through NPM.
+
+3.What is the Role of Node JS in React JS?
+Ans:
+Node JS is a JavaScript runtime built on Chrome's V8 engine that allows you to run JavaScript code on the server side. In the context of React, Node.js is crucial for several reasons:
+Development Server: Tools like Create React App (CRA) use Node.js to run a development server that helps you develop and test your application locally.
+Build Tools: Node.js is used to run build tools and task runners like Webpack and Babel, which are essential for compiling and bundling your React code.
+
+4.What is CLI Command in React JS?
+Ans:
+A CLI (Command Line Interface) command in React JS usually refers to commands you run in your terminal to create, build, and manage React applications.
+npx create-react-app my-app – Initializes a new React application.
+npm start – Starts the development server.
+npm run build – Creates a production build of the app.
+npm test – Runs the tests.
+
+5.What are Components in React JS?
+Ans:
+Components are the building blocks of a React application. They are reusable and self-contained pieces of code that define how a certain part of the UI should appear and behave. Components can be either:
+Functional Components: Simple functions that return JSX (JavaScript XML).
+Class Components: ES6 classes that extend React.Component and include lifecycle methods.
+
+6.What are Header and Content Components in React JS?
+Ans:
+Header and Content are examples of components in a React application:
+Header Component: Typically contains navigation links, branding, or other elements that appear at the top of your application.
+Content Component: Represents the main content of your application, often changing based on user interactions or application state.
+
+7.How to Install React JS on Windows and Linux Operating Systems? How to Install
+NPM and How to check version of NPM?
+Ans:
+Install Node.js: Download and install the Node.js installer from nodejs.org. This will also install NPM.
+Create a React App: Open Command Prompt or PowerShell and run:
+npx create-react-app my-app
+
+-->Linux:
+1.Install Node.js and NPM:
+sudo apt update
+sudo apt install nodejs npm
+
+2.Create a React App:
+npx create-react-app my-app
+Replace my-app with your project name.
+
+-->How to Install NPM and Check Version of NPM?
+npm -v
+
+8.How to Check the Version of React JS?
+Ans:
+To check the version of React JS used in your project, look at the package.json file in your project directory. It lists the version under dependencies:
+"react": "^18.2.0",
+
+9.How to change in components of React Js?
+Ans:
+Updating Component State:
+Components often maintain internal state using the useState hook in functional components. You can update this state to trigger re-renders and change the appearance or behavior of the component.
+
+Passing Props:
+Components receive data and functions via props from their parent components. Changing these props will result in the child component re-rendering with the new values.
+
+Conditional Rendering:
+You can use conditional rendering to change what a component displays based on some state or props.
+
+Dynamic Component Rendering:
+You can dynamically switch between different components based on state or props
+
+10.How to Create a List View in React Js?
+Ans:
+Set Up Your React Project:
+Make sure you have a React project set up. If not, create one using Create React App:
+npx create-react-app list-view-example
+cd list-view-example
+npm start
+
+import React from 'react';
+
+const ListView = ({ items }) => {
+  return (
+    <div>
+      <h1>List View</h1>
+      <ul>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default ListView;
+
+Use the List View Component:
+Incorporate your ListView component into your main application file, typically App.js:
+Run Your Application:
+Start your development server if it’s not already running:
+npm start
+
+
+
+
